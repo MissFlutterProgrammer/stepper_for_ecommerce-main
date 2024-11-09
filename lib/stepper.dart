@@ -76,9 +76,7 @@ class _StepperForEcomState extends State<StepperForEcom> {
                         onPressed: details.onStepCancel!,
                         text: 'Back',
                       ),
-                    const SizedBox(
-                      width: 10,
-                    ),
+                    const SizedBox(width: 10),
                     Button(
                       onPressed: details.onStepContinue!,
                       text: isLastStep ? 'Confirm' : 'Next',
@@ -163,70 +161,62 @@ class _StepperForEcomState extends State<StepperForEcom> {
                   children: [
                     const Text(
                       'First Name',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
+                    const SizedBox(width: 20),
                     Text(
                       firstNameController.text.toString(),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 6,
-                ),
+                const SizedBox(height: 6),
                 Row(
                   children: [
                     const Text(
                       'Last Name',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
+                    const SizedBox(width: 20),
                     Text(
                       lastNameController.text.toString(),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 6,
-                ),
+                const SizedBox(height: 6),
                 Row(
                   children: [
                     const Text(
                       'Address',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
+                    const SizedBox(width: 20),
                     Text(
                       addressController.text.toString(),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 6,
-                ),
+                const SizedBox(height: 6),
                 Row(
                   children: [
                     const Text(
                       'Postcode',
-                      style: TextStyle(fontWeight: FontWeight.bold),
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                    const SizedBox(
-                      width: 20,
-                    ),
+                    const SizedBox(width: 20),
                     Text(
                       postCodeController.text.toString(),
                     ),
                   ],
                 ),
-                const SizedBox(
-                  height: 26,
-                ),
+                const SizedBox(height: 26),
               ],
             ),
           ),
